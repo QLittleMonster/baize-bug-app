@@ -81,6 +81,6 @@
     "vue-tsc": "^1.0.24"
   },
   "lint-staged": {
-    "**/*.{js,ts,json}": "prettier --write ."
+    "**/*.{js,ts,json,vue}": "prettier --write ."
   }
 }
