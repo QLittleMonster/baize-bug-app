@@ -1,19 +1,80 @@
 {
+  // 注册ui框架,还不要忘了有了框架对应的css文件在uni.scss注册
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/bug/work",
+      "path": "pages/bug/task/index",
       "style": {
         "navigationBarTitleText": "任务"
       }
     },
     {
-      "path": "pages/bug/user",
+      "path": "pages/bug/user/index",
       "style": {
         "navigationBarTitleText": "我的"
       }
+    },
+    {
+      "path": "pages/bug/user/rules",
+      "style": {
+        "navigationBarTitleText": "规则说明"
+      }
+    },
+    {
+      "path": "pages/bug/user/suggest",
+      "style": {
+        "navigationBarTitleText": "意见反馈"
+      }
+    },
+    {
+      "path": "pages/bug/user/demand",
+      "style": {
+        "navigationBarTitleText": "我的需求"
+      }
+    },
+    {
+      "path": "pages/bug/user/task",
+      "style": {
+        "navigationBarTitleText": "我的任务"
+      }
     }
   ],
+
+  "tabBar": {
+    "custom": true,
+    "color": "#cdcdcd",
+    "backgroundColor": "#f0f0f0",
+    "selectedColor": "#515151",
+    "borderStyle": "#f0f0f0",
+    "list": [
+      {
+        "pagePath": "pages/bug/task/index",
+        "text": "任务",
+        "iconPath": "/static/images/tabbar/task_pre.png",
+        "selectedIconPath": "/static/images/tabbar/task_after.png"
+      },
+      {
+        "pagePath": "pages/bug/user/index",
+        "text": "我的",
+        "iconPath": "/static/images/tabbar/user_pre.png",
+        "selectedIconPath": "/static/images/tabbar/user_after.png"
+      }
+    ],
+    //    主题浅色： #b7d0ad  主题深色： #72c452
+    "midButton": {
+      "width": "80px",
+      "height": "80px",
+      "iconWidth": "60px",
+      "iconPath": "/static/images/tabbar/publish.png"
+    }
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "任务",
