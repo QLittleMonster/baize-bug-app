@@ -59,12 +59,7 @@ interface UPadZero {
 }
 
 interface UPriceFormat {
-  (
-    number: number | string,
-    decimals: number,
-    decimalPoint: string,
-    thousandsSeparator: string
-  ): string
+  (number: number | string, decimals: number, decimalPoint: string, thousandsSeparator: string): string
 }
 
 interface UType2icon {
@@ -142,12 +137,7 @@ enum RouteType {
 
 interface URouteObject {
   (option: {
-    type?:
-      | RouteType.navigateBack
-      | RouteType.reLaunch
-      | RouteType.switchTab
-      | RouteType.redirect
-      | RouteType.navigateTo
+    type?: RouteType.navigateBack | RouteType.reLaunch | RouteType.switchTab | RouteType.redirect | RouteType.navigateTo
     url?: string
     delta?: number
     params?: object
