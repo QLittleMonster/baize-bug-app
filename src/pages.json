@@ -16,6 +16,12 @@
       }
     },
     {
+      "path": "pages/bug/task/detail",
+      "style": {
+        "navigationBarTitleText": "任务详情"
+      }
+    },
+    {
       "path": "pages/bug/user/index",
       "style": {
         "navigationBarTitleText": "我的"
@@ -49,9 +55,9 @@
 
   "tabBar": {
     "custom": true,
-    "color": "#cdcdcd",
+    "color": "#707070",
     "backgroundColor": "#f0f0f0",
-    "selectedColor": "#515151",
+    "selectedColor": "#000",
     "borderStyle": "#f0f0f0",
     "list": [
       {
@@ -67,7 +73,6 @@
         "selectedIconPath": "/static/images/tabbar/user_after.png"
       }
     ],
-    //    主题浅色： #b7d0ad  主题深色： #72c452
     "midButton": {
       "width": "80px",
       "height": "80px",
